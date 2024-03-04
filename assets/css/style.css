@@ -10,3 +10,7 @@
     rgba(54, 54, 54, 1) 74%
   );
 }
+
+.list-style-none {
+  list-style: none;
+}
