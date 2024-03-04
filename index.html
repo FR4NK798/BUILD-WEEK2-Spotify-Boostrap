@@ -20,33 +20,46 @@
         <div class="row">
           <div class="col-3"></div>
           <div class="col-7 bg-back-black text-white px-3">
-            <header>
-              <div class="d-flex">
-                <button class="btn bg-black">
-                  <i class="fa-solid fa-angle-left"></i>
-                </button>
-                <button class="btn bg-black">
-                  <i class="fa-solid fa-angle-right"></i>
-                </button>
+            <header class="my-3">
+              <div class="d-flex justify-content-between">
                 <div>
-                  <ul class="">
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Il tuo profilo
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#"></a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
+                  <button class="btn p-0 bg-black rounded-circle" style="width: 25px; height: 25px">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="12.5" viewBox="0 0 320 512" class="pb-1">
+                      <path
+                        fill="#c2c2c2"
+                        d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn p-0 ps-1 bg-black rounded-circle" style="width: 25px; height: 25px">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      width="12.5"
+                      viewBox="0 0 320 512"
+                      class="pb-1 me-1"
+                    >
+                      <path
+                        fill="#c2c2c2"
+                        d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="dropdown d-flex">
+                  <button
+                    class="btn bg-black dropdown-toggle text-white ps-0 py-0 fs-8 rounded-5"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="./assets/imgs/search/image-37.jpeg" alt="" width="24px" class="rounded-4" />
+                    Epicode
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </div>
               </div>
@@ -57,10 +70,11 @@
                   <div class="row g-0">
                     <div class="col-3 p-2">
                       <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8oMvPK3tfPChYVEC7JIyuJ_JE6bDku4BGsjekJb8pybf5Vr7MX4peFBHdYZunzbePXYg&usqp=CAU"
+                        src="https://www.contra-ataque.it/wp-content/uploads/2022/10/Viola-750x513.jpeg.webp"
                         alt=""
                         width="100%"
                         height="100%"
+                        class="object-fit-cover"
                       />
                     </div>
                     <div class="col-9 ps-2">
@@ -166,15 +180,64 @@
                 </div>
                 <main>
                   <div class="container g-0">
-                    <div class="row mt-3 justify-content-between align-items-baseline mb-1">
-                      <div class="col-5">
-                        <h3 class="fs-11">Altro di ciò che ti piace</h3>
+                    <div class="d-flex mt-3 justify-content-between align-items-baseline mb-1">
+                      <h3 class="fs-11">In primo piano</h3>
+                      <a href="" class="fs-9 text-decoration-none text-card-p-gray">VISUALIZZA TUTTO</a>
+                    </div>
+                    <div class="row g-0 justify-content-between">
+                      <div class="col-2 mb-2 p-0 bg-aj rounded-2">
+                        <div class="card bg-card-black text-white p-2">
+                          <img src="./assets/imgs/main/image-6.jpg" class="card-img-top" alt="..." />
+                          <div class="card-body p-0">
+                            <p class="card-title mt-2 fs-8 fw-bold">Jazz</p>
+                            <p class="card-text fs-7 text-card-p-gray">Le migliori canzoni Jazz</p>
+                          </div>
+                        </div>
                       </div>
-                      <div class="col-2">
-                        <a href="" class="fs-9">VISUALIZZA TUTTO</a>
+                      <div class="col-2 mb-2 p-0 bg-aj rounded-2">
+                        <div class="card bg-card-black text-white p-2">
+                          <img src="./assets/imgs/main/image-7.jpg" class="card-img-top" alt="..." />
+                          <div class="card-body p-0">
+                            <p class="card-title mt-2 fs-8 fw-bold">Buongiorno</p>
+                            <p class="card-text fs-7 text-card-p-gray">Inizia la giornata alla grande</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-2 mb-2 p-0 bg-aj rounded-2">
+                        <div class="card bg-card-black text-white p-2">
+                          <img src="./assets/imgs/main/image-8.jpg" class="card-img-top" alt="..." />
+                          <div class="card-body p-0">
+                            <p class="card-title mt-2 fs-8 fw-bold">Next gen</p>
+                            <p class="card-text fs-7 text-card-p-gray">L'arte della nuova generazione</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-2 mb-2 p-0 bg-aj rounded-2">
+                        <div class="card bg-card-black text-white p-2">
+                          <img src="./assets/imgs/main/image-9.jpg" class="card-img-top" alt="..." />
+                          <div class="card-body p-0">
+                            <p class="card-title mt-2 fs-8 fw-bold">Sotto la doccia</p>
+                            <p class="card-text fs-7 text-card-p-gray">Rilassati con questa playlist</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-2 mb-2 p-0 bg-aj rounded-2">
+                        <div class="card bg-card-black text-white p-2">
+                          <img src="./assets/imgs/main/image-10.jpg" class="card-img-top" alt="..." />
+                          <div class="card-body p-0">
+                            <p class="card-title mt-2 fs-8 fw-bold">Buonumore</p>
+                            <p class="card-text fs-7 text-card-p-gray">Una carrellata di canzoni allegre</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="row g-0 gap-3">
+                  </div>
+                  <div class="container g-0">
+                    <div class="d-flex mt-3 justify-content-between align-items-baseline mb-1">
+                      <h3 class="fs-11">Altro di ciò che ti piace</h3>
+                      <a href="" class="fs-9 text-decoration-none text-card-p-gray">VISUALIZZA TUTTO</a>
+                    </div>
+                    <div class="row g-0 justify-content-between">
                       <div class="col-2 mb-2 p-0 bg-aj rounded-2">
                         <div class="card bg-card-black text-white p-2">
                           <img src="./assets/imgs/main/image-1.jpg" class="card-img-top" alt="..." />
@@ -223,57 +286,53 @@
                     </div>
                   </div>
                   <div class="container g-0">
-                    <div class="row mt-3 justify-content-between align-items-baseline mb-1">
-                      <div class="col-5">
-                        <h3 class="fs-11">In primo piano</h3>
-                      </div>
-                      <div class="col-2">
-                        <a href="" class="fs-9">VISUALIZZA TUTTO</a>
-                      </div>
+                    <div class="d-flex mt-3 justify-content-between align-items-baseline mb-1">
+                      <h3 class="fs-11">Playlist tutte da scoprire</h3>
+                      <a href="" class="fs-9 text-decoration-none text-card-p-gray">VISUALIZZA TUTTO</a>
                     </div>
-                    <div class="row g-0 gap-3">
+                    <div class="row g-0 justify-content-between">
                       <div class="col-2 mb-2 p-0 bg-aj rounded-2">
                         <div class="card bg-card-black text-white p-2">
-                          <img src="./assets/imgs/main/image-6.jpg" class="card-img-top" alt="..." />
+                          <img src="./assets/imgs/main/image-11.jpg" class="card-img-top" alt="..." />
                           <div class="card-body p-0">
-                            <p class="card-title mt-2 fs-8 fw-bold">Card title</p>
-                            <p class="card-text fs-7 text-card-p-gray"></p>
+                            <p class="card-title mt-2 fs-8 fw-bold">Mercury</p>
+                            <p class="card-text fs-7 text-card-p-gray">Scopri Imagine Dragons</p>
                           </div>
                         </div>
                       </div>
                       <div class="col-2 mb-2 p-0 bg-aj rounded-2">
                         <div class="card bg-card-black text-white p-2">
-                          <img src="./assets/imgs/main/image-7.jpg" class="card-img-top" alt="..." />
+                          <img src="./assets/imgs/main/image-12.jpg" class="card-img-top" alt="..." />
                           <div class="card-body p-0">
-                            <p class="card-title mt-2 fs-8 fw-bold">Summer</p>
-                            <p class="card-text fs-7 text-card-p-gray">Le migliori hit dell'estate</p>
+                            <p class="card-title mt-2 fs-8 fw-bold">On the road</p>
+                            <p class="card-text fs-7 text-card-p-gray">Le musica della strada.</p>
                           </div>
                         </div>
                       </div>
                       <div class="col-2 mb-2 p-0 bg-aj rounded-2">
                         <div class="card bg-card-black text-white p-2">
-                          <img src="./assets/imgs/main/image-8.jpg" class="card-img-top" alt="..." />
+                          <img src="./assets/imgs/main/image-13.jpg" class="card-img-top" alt="..." />
                           <div class="card-body p-0">
-                            <p class="card-title mt-2 fs-8 fw-bold">Concentrazione</p>
-                            <p class="card-text fs-7 text-card-p-gray">La miglior musica per studiare</p>
+                            <p class="card-title mt-2 fs-8 fw-bold">Home</p>
+                            <p class="card-text fs-7 text-card-p-gray">La miglior musica per le pulizie</p>
                           </div>
                         </div>
                       </div>
                       <div class="col-2 mb-2 p-0 bg-aj rounded-2">
                         <div class="card bg-card-black text-white p-2">
-                          <img src="./assets/imgs/main/image-9.jpg" class="card-img-top" alt="..." />
+                          <img src="./assets/imgs/main/image-17.jpg" class="card-img-top" alt="..." />
                           <div class="card-body p-0">
-                            <p class="card-title mt-2 fs-8 fw-bold">Piano</p>
-                            <p class="card-text fs-7 text-card-p-gray">Rilassati con questa playlist</p>
+                            <p class="card-title mt-2 fs-8 fw-bold">It's Friday</p>
+                            <p class="card-text fs-7 text-card-p-gray">La miglior musica per goderti il weekend</p>
                           </div>
                         </div>
                       </div>
                       <div class="col-2 mb-2 p-0 bg-aj rounded-2">
                         <div class="card bg-card-black text-white p-2">
-                          <img src="./assets/imgs/main/image-10.jpg" class="card-img-top" alt="..." />
+                          <img src="./assets/imgs/main/image-16.jpg" class="card-img-top" alt="..." />
                           <div class="card-body p-0">
-                            <p class="card-title mt-2 fs-8 fw-bold">Card title</p>
-                            <p class="card-text fs-7 text-card-p-gray"></p>
+                            <p class="card-title mt-2 fs-8 fw-bold">Smart</p>
+                            <p class="card-text fs-7 text-card-p-gray">Sii produttivo grazie a questa playlist</p>
                           </div>
                         </div>
                       </div>
