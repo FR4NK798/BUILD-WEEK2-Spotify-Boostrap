@@ -26,3 +26,29 @@ h6 {
 .friends-songs h5 {
     font-size: 0.7rem;
 }
+
+/* artista */
+
+.middle-col {
+    color: white;
+}
+
+.hero-section {
+    background-image: url("https://spaces.whynow.co.uk/2023/02/metric-scaled.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+    filter: grayscale(100%);
+}
+
+.btn-follow {
+    border: 1px solid white;
+    color: white;
+    font-size: 0.7rem;
+    margin-inline: 0.7rem;
+}
+
+.songs-section {
+    font-size: 0.7rem;
+}
