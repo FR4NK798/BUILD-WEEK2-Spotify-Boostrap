@@ -1,0 +1,46 @@
+.grey{
+    color: #a7a7a7
+}
+
+.playerImg{
+    height: 4em;
+    margin: 0.5em;
+    margin-inline-end: 1em;
+}
+
+.fixed-bottom{
+    padding-inline: 0;
+}
+
+.infoSong{
+    margin-block: 20px;
+}
+
+.infoSong h2{
+    margin-bottom: 0px;
+    font-size: 1em;
+}
+.infoSong h3, .time p{
+    margin-bottom: 0px;
+    font-size: 0.8em;
+}
+
+.infoSong + img{
+    margin-left: 15px;
+}
+
+.play{
+    background-color: white;
+    /* padding: 0.7em; */
+    border-radius: 50%;
+}
+
+.progress{
+    height: 0.5em;
+    background-color: #a6a6a6;
+}    
+
+
+.green{
+    background-color: #1ed761;
+}
