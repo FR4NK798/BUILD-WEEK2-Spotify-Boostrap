@@ -1,0 +1,28 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
+.right-side {
+    background-color: black;
+    color: #b3b1b1;
+}
+
+.bi-square {
+    font-size: 0.5rem;
+}
+
+.friends-icons * i {
+    font-size: 1.4rem;
+}
+
+.friends-songs {
+    font-size: 0.6rem;
+}
+
+.friends-songs h5 {
+    font-size: 0.7rem;
+}
