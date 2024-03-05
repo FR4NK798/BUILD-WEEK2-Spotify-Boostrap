@@ -1,0 +1,17 @@
+.gradient {
+    background: rgb(31, 31, 31);
+    background: linear-gradient(
+      22deg,
+      rgb(0 0 0) 0%,
+      rgba(0, 0, 0, 1) 0%,
+      rgb(0 0 0) 24%,
+      rgb(0 0 0 / 29%) 44%,
+      rgba(45, 45, 45, 1) 66%,
+      rgba(54, 54, 54, 1) 74%
+    );
+  }
+  
+  .list-style-none {
+    list-style: none;
+  }
+  
