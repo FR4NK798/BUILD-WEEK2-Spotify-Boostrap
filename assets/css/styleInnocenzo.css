@@ -53,3 +53,7 @@ header {
 .navbar a {
   font-size: 0.8rem;
 }
+
+.card {
+  height: 100%;
+}
