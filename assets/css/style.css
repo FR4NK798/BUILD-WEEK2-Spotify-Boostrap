@@ -40,7 +40,26 @@
     background-color: #a6a6a6;
 }    
 
-
-.green{
-    background-color: #1ed761;
+.white{
+    background-color: white;
 }
+.white:hover{
+    background-color: #1ed761;
+    /* position: relative; */
+}
+
+.white:hover::after{
+    content: "";
+    width: 2em;
+    height: 2em;
+    background-color: white;
+    border-radius: 50%;
+    position:absolute;
+    left: 0;
+}
+
+.prova{
+    /* height: 3em; */
+    position: relative;
+}
+
