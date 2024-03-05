@@ -34,12 +34,11 @@ h6 {
 }
 
 .hero-section {
-    background-image: url("https://spaces.whynow.co.uk/2023/02/metric-scaled.jpg");
+    background-image: url("/assets/imgs/metric-scaled-modified.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 40vh;
-    filter: grayscale(100%);
 }
 
 .btn-follow {
@@ -47,8 +46,24 @@ h6 {
     color: white;
     font-size: 0.7rem;
     margin-inline: 0.7rem;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-follow:hover {
+    transform: scale(1.1);
+    border: 1px solid white;
 }
 
 .songs-section {
     font-size: 0.7rem;
+    background: rgb(45, 45, 45);
+    background: linear-gradient(180deg, rgba(45, 45, 45, 1) 0%, rgba(24, 24, 24, 1) 33%, rgba(11, 11, 11, 1) 100%);
+}
+
+.bi-play-circle-fill {
+    color: #1ed760;
+}
+
+.bi-patch-check-fill {
+    color: #3d91f4;
 }
