@@ -4,41 +4,41 @@ h3,
 h4,
 h5,
 h6 {
-  color: white;
+    color: white;
 }
 .right-side {
-  background-color: black;
-  color: #b3b1b1;
+    background-color: black;
+    color: #b3b1b1;
 }
 
 .bi-square {
-  font-size: 0.5rem;
+    font-size: 0.5rem;
 }
 
 .friends-icons * i {
-  font-size: 1.4rem;
+    font-size: 1.4rem;
 }
 
 .friends-songs {
-  font-size: 0.5rem;
+    font-size: 0.5rem;
 }
 
 .friends-songs h5 {
-  font-size: 0.6rem;
+    font-size: 0.6rem;
 }
 
 /* artista */
 
 .middle-col {
-  color: white;
+    color: white;
 }
 
 .hero-section {
-  background-image: url("/assets/imgs/metric-scaled-modified.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 40vh;
+    background-image: url("/assets/imgs/metric-scaled-modified.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
 }
 
 .verified {
@@ -46,28 +46,28 @@ h6 {
 }
 
 .btn-follow {
-  border: 1px solid white;
-  color: white;
-  font-size: 0.7rem;
-  margin-inline: 0.7rem;
-  transition: 0.3s ease-in-out;
+    border: 1px solid white;
+    color: white;
+    font-size: 0.7rem;
+    margin-inline: 0.7rem;
+    transition: 0.3s ease-in-out;
 }
 
 .btn-follow:hover {
-  transform: scale(1.1);
-  border: 1px solid white;
+    transform: scale(1.1);
+    border: 1px solid white;
 }
 
 .songs-section {
-  font-size: 0.7rem;
-  background: rgb(45, 45, 45);
-  background: linear-gradient(180deg, rgba(45, 45, 45, 1) 0%, rgba(24, 24, 24, 1) 33%, rgba(11, 11, 11, 1) 100%);
+    font-size: 0.8rem;
+    background: rgb(45, 45, 45);
+    background: linear-gradient(180deg, rgba(45, 45, 45, 1) 0%, rgba(24, 24, 24, 1) 33%, rgba(11, 11, 11, 1) 100%);
 }
 
 .bi-play-circle-fill {
-  color: #1ed760;
+    color: #1ed760;
 }
 
 .bi-patch-check-fill {
-  color: #3d91f4;
+    color: #3d91f4;
 }
