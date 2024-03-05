@@ -41,6 +41,10 @@ h6 {
     height: 40vh;
 }
 
+.verified {
+    font-size: 0.6rem;
+}
+
 .btn-follow {
     border: 1px solid white;
     color: white;
