@@ -57,3 +57,37 @@ header {
 .card {
   height: 100%;
 }
+/* ---------------------------------- */
+
+.search-cont {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 75px;
+  align-items: center;
+}
+
+.form-control {
+  padding: 6px 30px;
+  background-color: #3a3a3b;
+}
+
+#fotos {
+  background-color: rgb(220, 20, 140);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 25vh;
+}
+
+#fotos img {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  bottom: 0;
+  right: 0;
+  transform: rotate(25deg) translate(18%, -2%);
+  object-fit: cover;
+  object-position: center center;
+}
