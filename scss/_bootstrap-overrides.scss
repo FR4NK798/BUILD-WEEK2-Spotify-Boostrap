@@ -25,6 +25,8 @@ $add-spacer: (
   11: $spacer * 25,
   12: $spacer * 1.8,
   13: $spacer * 14,
+  14: $spacer * 4,
+  15: $spacer * 0.2,
 );
 
 $spacers: map-merge($spacers, $add-spacer);
@@ -39,6 +41,7 @@ $add-color: (
   "card-black": #2f2f2f,
   "back-black": rgb(37 37 37),
   "card-p-gray": #a3a3a3,
+  "icon-gray": #414141,
 );
 
 $theme-colors: map-merge($theme-colors, $add-color);
@@ -55,6 +58,7 @@ $add-font-size: (
   9: 0.5rem,
   10: 1.2rem,
   11: 0.9rem,
+  12: 0.8rem,
 );
 
 $font-sizes: map-merge($font-sizes, $add-font-size);
