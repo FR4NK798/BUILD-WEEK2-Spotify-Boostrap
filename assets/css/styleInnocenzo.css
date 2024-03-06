@@ -1,3 +1,7 @@
+.back-black {
+  background-color: #141414;
+}
+
 .gradient {
   background: rgb(31, 31, 31);
   background: linear-gradient(
@@ -39,6 +43,10 @@
   background-color: #3a3a3a;
 }
 
+#p-div p {
+  font-size: 0.7rem;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -56,8 +64,57 @@ header {
 
 .card {
   height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  transition: background-color 0.5s ease;
 }
+
+.col-2:hover .card {
+  background-color: #303030;
+}
+
+.col-2:hover .icona {
+  opacity: 1;
+}
+
+.icon-rel {
+  position: relative;
+}
+
+.icon-rel:hover {
+  background-color: #303030;
+}
+
+.icon-rel:hover .icona-top {
+  opacity: 1;
+}
+
+.icona {
+  position: absolute;
+  bottom: -8%;
+  right: -8%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.icona-top {
+  position: absolute;
+  bottom: 0;
+  right: -7%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 35px;
+}
+
 /* ---------------------------------- */
+
+a {
+  text-decoration: none;
+  color: white;
+}
 
 .search-cont {
   position: absolute;
@@ -78,11 +135,11 @@ header {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 25vh;
+  height: 28vh;
 }
 
 .fotos h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 0.7rem;
 }
 
