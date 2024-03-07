@@ -70,16 +70,18 @@ header {
   transition: background-color 0.5s ease;
 }
 
-.col-2:hover .card {
+.card-col:hover .card {
   background-color: #303030;
 }
 
-.col-2:hover .icona {
+.card-col:hover .icona {
   opacity: 1;
 }
 
 .icon-rel {
   position: relative;
+
+  background-color: #3a3a3a;
 }
 
 .icon-rel:hover {
@@ -137,6 +139,13 @@ header {
   width: 25px;
 }
 
+.player-row {
+  background-color: #1e1e1e;
+}
+
+.fix-play {
+  bottom: 80px;
+}
 /* ---------------------------------- */
 
 a {
