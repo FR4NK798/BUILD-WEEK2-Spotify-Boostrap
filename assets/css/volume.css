@@ -1,0 +1,47 @@
+
+      input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background: transparent;
+        cursor: pointer;
+        /* width: 15rem; */
+      }
+
+      /* Removes default focus */
+      input[type="range"]:focus {
+        outline: none;
+      }
+
+      /***** Chrome, Safari, Opera and Edge Chromium styles *****/
+      /* slider track */
+      input[type="range"]::-webkit-slider-runnable-track {
+        background-color: #4d4d4d;
+        border-radius: 0.5rem;
+        height: 0.5rem;
+      }
+
+      /* slider thumb */
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Override default look */
+        appearance: none;
+      }
+
+      input[type="range"]:hover::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Override default look */
+        appearance: none;
+        margin-top: -0.3em;
+        /* Centers thumb on the track */
+
+        /*custom styles*/
+        background-color: white;
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+      }
+
+      /* prova hover barra */
+
+      input[type="range"] {
+        accent-color: coral;
+      }
+

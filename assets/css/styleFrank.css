@@ -4,9 +4,182 @@
 
 .playerImg{
     height: 4em;
+    
+    border: 1px solid;
+    border-color: #8d8d8d;
+
+    border-radius: 0.3em;
+}
+
+.playerDiv{
+    border: 1px solid;
+    border-color: #4d4d4d;
     margin: 0.5em;
     margin-inline-end: 1em;
+
+    border-radius: 0.34em;
+    position: relative;
 }
+
+
+.playerDiv:hover{
+    border-color: #272727;
+}
+
+.arrow-player{
+    position: absolute;
+   right: 0.3em;
+   top: 0.3em;
+   background-color: #65656580;
+   border-radius: 50%;
+   padding: 0.3em;
+}
+.arrow-player:hover{
+    content: url(../imgs/icons/arrow-up-short.svg);
+    transform: scale(1.2);
+}
+
+
+
+.infoSong a{
+    text-decoration: none;
+}
+.infoSong a:hover{
+    text-decoration: underline;
+}
+
+
+.heart:hover{
+content: url(../imgs/icons/heart\ white.svg);
+cursor: pointer;
+}
+
+.like{
+    content: url(../imgs/icons/heart-fill.svg);
+}
+
+.shuffle:hover{
+content: url(../imgs/icons/shuffle\ white.png);
+cursor: pointer;
+}
+
+.shuffleActive{
+    content: url(../imgs/icons/icons8-shuffle-green.png);
+
+}
+.prec:hover{
+    content: url(../imgs/icons/skip-start-sm\ white.svg);
+    cursor: pointer;
+    /* color#1ed761: #1ed761; */
+}
+
+.precActive{
+    content: url(../imgs/icons/skip-start-green.svg);
+    /* height: 1.2em */
+}
+.next:hover{
+    content: url(../imgs/icons/skip-end-sm\ white.svg);
+    cursor: pointer;
+}
+
+/* .play-pause:visited{
+    content: url(../imgs/icons/pause-sm.svg);
+} */
+/* .play-pause:active{
+    content: url(../imgs/icons/pause-sm.svg);
+} */
+.premuto{
+    content: url(../imgs/icons/pause-sm.svg);
+    /* height: 0.5em; */
+    cursor: pointer;
+    /* color: #1ed761; */
+}
+
+/* next class premuto */
+
+.nextActive{
+    content: url(../imgs/icons/skip-end-green.svg);
+}
+
+.repeat:hover{
+    content: url(../imgs/icons/repeat_white.svg);
+    cursor: pointer;
+}
+
+.premuto-repeat{
+    content: url(../imgs/icons/repeat\ \(1\).svg);
+    /* position: relative; */
+}
+
+.premuto-repeat::after{
+    content: "";
+    height: 1em;
+    background-color: #1ed761;
+    position: absolute;
+
+}
+
+.play-pause{
+    cursor: pointer;
+}
+
+.micro:hover{
+    content: url(../imgs/icons/microphone_white.png);
+    cursor: pointer;
+}
+
+.premuto-micro{
+    content: url(../imgs/icons/microphone\ \(2\).png);
+} 
+
+/* .micro:checked{
+    content: url(../imgs/icons/microphone\ \(2\).png);
+} */
+
+/* .micro:disabled{
+    content: url(../imgs/icons/microphone\ \(1\).png);
+}
+
+
+*/
+
+.menu:hover{
+cursor: pointer;
+content: url(../imgs/icons/icons8-menu_white.svg);
+}
+
+.premuto-menu{
+    content: url(../imgs/icons/icons8-menu.svg);
+}
+.speaker:hover{
+    cursor: pointer;
+    content: url(../imgs/icons/speaker_white.svg);
+}
+
+.speaker:active{
+    /* cursor: pointer; */
+    content: url(../imgs/icons/speaker.svg);
+}
+
+.volume:hover{
+    cursor: pointer;
+    content: url(../imgs/icons/volume-off_white.svg);
+}
+
+.volume:active{
+    /* cursor: pointer; */
+    content: url(../imgs/icons/volume-off.svg);
+}
+
+.volumeNo{
+    content: url(../imgs/icons/volume-mute.svg);
+}
+
+.expand:hover{
+    cursor: pointer;
+    content: url(../imgs/icons/arrows-angle-expand_white.svg);
+}
+
 
 .fixed-bottom{
     padding-inline: 0;
@@ -14,6 +187,7 @@
 
 .infoSong{
     margin-block: 20px;
+
 }
 
 .infoSong h2{
@@ -63,3 +237,12 @@
     position: relative;
 }
 
+/* media query */
+
+
+
+@media screen and (max-width: 992px){
+    #playerId{
+        flex-grow: 0.3;
+    }
+}
