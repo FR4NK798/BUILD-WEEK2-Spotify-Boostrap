@@ -1,12 +1,10 @@
 window.onload = () => {
   //   e.preventDefault();
-
   const bntPlayListJazz = document.getElementById("playListJazz");
   console.log("tasto", bntPlayListJazz);
-  bntPlayListJazz.addEventListener("click", (e) => {
+  bntPlayListJazz.addEventListener("click", () => {
     console.log("prova");
-    e.preventDefault();
-
+    const idEndpoint = "";
     // window.location.assign("./album.html");
 
     // inizio fetch
@@ -18,70 +16,51 @@ window.onload = () => {
     fetchPlaylist(urlPlayList, idPlaylist);
     console.log("Grande stefanooooh");
   });
+};
 
-  const playListBuongiorno = document.getElementById("playListBuongiorno");
-  console.log("tasto", playListBuongiorno);
-  playListBuongiorno.addEventListener("click", (e) => {
-    console.dir("prova");
-    e.preventDefault();
-
-    // window.location.assign("./album.html");
-
-    // inizio fetch
-    const urlPlayList = "https://deezerdevs-deezer.p.rapidapi.com/playlist/";
-    const idPlaylist = "10676141442";
-    console.log(urlPlayList + idPlaylist);
-
-    console.log("prima della funzione");
-    fetchPlaylist(urlPlayList, idPlaylist);
-    console.log("Grande stefanooooh");
-
-    idPlaylist = "";
-  });
-
-  const fetchPlaylist = (urlPlayList, idPlaylist) => {
-    fetch(urlPlayList + idPlaylist, {
-      method: "GET",
-      headers: {
-        "X-RapidAPI-Key": "09f73dade1msh056e8368f5d73cfp15ae56jsnd2209dc537f7",
-        "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
-      },
-    })
-      .then((response) => {
-        console.log("Response", response);
-        if (response.ok) {
-          return response.json();
-        } else {
-          if (response.status === 400) {
-            throw new Error("400 - Errore lato client");
-          }
-
-          if (response.status === 404) {
-            throw new Error("404 - Dato non trovato");
-          }
-
-          if (response.status === 500) {
-            throw new Error("500 - Errore lato server");
-          }
-
-          throw new Error("Errore nel reperimento dati");
+const fetchPlaylist = (urlPlayList, idPlaylist) => {
+  fetch(urlPlayList + idPlaylist, {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "09f73dade1msh056e8368f5d73cfp15ae56jsnd2209dc537f7",
+      "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
+    },
+  })
+    .then((response) => {
+      console.log("Response", response);
+      if (response.ok) {
+        return response.json();
+      } else {
+        if (response.status === 400) {
+          throw new Error("400 - Errore lato client");
         }
-      })
-      .then((oggetto) => {
-        console.log("oggetto", oggetto);
-        // prendere la home
-        const sezCentrale = document.getElementById("scroll");
-        // sotto
-        const divUnderHeader = document.querySelector("#scroll header+div");
-        // console.log("sotto sez centrale");
 
-        divUnderHeader.classList.add("d-none");
-        console.log("sotto sez centrale", divUnderHeader);
+        if (response.status === 404) {
+          throw new Error("404 - Dato non trovato");
+        }
 
-        const durationObj = Math.ceil(oggetto.duration / 60);
+        if (response.status === 500) {
+          throw new Error("500 - Errore lato server");
+        }
 
-        // inizio
-        sezCentrale.innerHTML = `
+        throw new Error("Errore nel reperimento dati");
+      }
+    })
+    .then((oggetto) => {
+      console.log("oggetto", oggetto);
+      // prendere la home
+      const sezCentrale = document.getElementById("scroll");
+      // sotto
+      const divUnderHeader = document.querySelector("#scroll header+div");
+      // console.log("sotto sez centrale");
+
+      divUnderHeader.classList.add("d-none");
+      console.log("sotto sez centrale", divUnderHeader);
+
+      const durationObj = Math.ceil(oggetto.duration / 60);
+
+      // inizio
+      sezCentrale.innerHTML = `
             <div class="middle-album-col text-white">
               <div class="middle-album-section d-flex flex-column" style="height: calc(100% - 1rem)">
                 <div class="p-3 d-none d-md-block">
@@ -147,8 +126,8 @@ window.onload = () => {
                             style="width: 20px; border-radius: 50%; aspect-ratio: 1"
                           />
                           ${oggetto.creator.name} &#x2022; ${new Date(oggetto.creation_date).getFullYear()} &#x2022; ${
-          oggetto.nb_tracks
-        }, <span class="fw-normal">${durationObj} min.</span>
+        oggetto.nb_tracks
+      }, <span class="fw-normal">${durationObj} min.</span>
                         </p>
                         <p class="d-md-none fw-bold fs-6">
                           <img
@@ -198,23 +177,23 @@ window.onload = () => {
               </div>
             </div>
           `;
-        //   aggiungere
+      //   aggiungere
 
-        const doveAggObj = document.getElementById("doveAggiungere");
+      const doveAggObj = document.getElementById("doveAggiungere");
 
-        console.log("array", oggetto.tracks.data);
+      console.log("array", oggetto.tracks.data);
 
-        const arrTracks = oggetto.tracks.data;
+      const arrTracks = oggetto.tracks.data;
 
-        let arrNum = 1;
+      let arrNum = 1;
 
-        arrTracks.forEach((element) => {
-          const singTrack = document.createElement("div");
-          singTrack.classList.add("row", "px-2", "mb-0", "gy-0");
+      arrTracks.forEach((element) => {
+        const singTrack = document.createElement("div");
+        singTrack.classList.add("row", "px-2", "mb-0", "gy-0");
 
-          //   console.log("element", element);
+        console.log("element", element);
 
-          singTrack.innerHTML = ` 
+        singTrack.innerHTML = ` 
                
                 <div class="col-4">
                   <div class="row g-2 mb-1 px-1">
@@ -223,7 +202,6 @@ window.onload = () => {
                     </div>
                     <div class="col-10">
                       <div>${element.title}</div>
-                   
                       <div class="text-secondary">${element.artist.name}</div>
                     </div>
                   </div>
@@ -236,11 +214,9 @@ window.onload = () => {
                 </div>
               `;
 
-          arrNum = arrNum + 1;
+        arrNum = arrNum + 1;
 
-          doveAggObj.appendChild(singTrack);
-        });
-      })
-      .catch((err) => console.log(err));
-  };
+        doveAggObj.appendChild(singTrack);
+      });
+    });
 };
