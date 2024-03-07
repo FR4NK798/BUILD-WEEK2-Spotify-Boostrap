@@ -70,16 +70,18 @@ header {
   transition: background-color 0.5s ease;
 }
 
-.col-2:hover .card {
+.card-col:hover .card {
   background-color: #303030;
 }
 
-.col-2:hover .icona {
+.card-col:hover .icona {
   opacity: 1;
 }
 
 .icon-rel {
   position: relative;
+
+  background-color: #3a3a3a;
 }
 
 .icon-rel:hover {
@@ -87,6 +89,14 @@ header {
 }
 
 .icon-rel:hover .icona-top {
+  opacity: 1;
+}
+
+.icon-rel:hover .icona-top-small {
+  opacity: 1;
+}
+
+.icon-rel:hover .icona-top-xxlarge {
   opacity: 1;
 }
 
@@ -109,6 +119,33 @@ header {
   width: 35px;
 }
 
+.icona-top-small {
+  position: absolute;
+  bottom: -20%;
+  right: -6%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 25px;
+}
+
+.icona-top-xxlarge {
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 25px;
+}
+
+.player-row {
+  background-color: #1e1e1e;
+}
+
+.fix-play {
+  bottom: 80px;
+}
 /* ---------------------------------- */
 
 a {
