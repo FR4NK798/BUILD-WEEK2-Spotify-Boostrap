@@ -283,21 +283,7 @@
           >
             <div class="middle-album-col text-white">
               <div class="middle-album-section d-flex flex-column" style="height: calc(100% - 1rem)">
-                <div class="p-3 d-md-none">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    fill="grey"
-                    class="bi bi-arrow-left-circle-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
-                    />
-                  </svg>
-                </div>
-                <div class="p-3">
+                <div class="p-3 d-none d-md-block">
                   <div class="d-flex justify-content-between">
                     <div class="d-none d-md-block">
                       <button class="btn p-0 bg-black rounded-circle bg-opacity-75" style="width: 25px; height: 25px">
@@ -352,8 +338,11 @@
                 </div>
                 <div>
                   <div class="row">
-                    <div class="col-3 pe-0">
-                      <div class="p-3 album-img">
+                    <div class="col-2 d-md-none d-flex justify-content-center">
+                      <i class="bi bi-arrow-left fs-1"></i>
+                    </div>
+                    <div class="col-8 col-md-3 pe-0 d-flex align-items-center">
+                      <div class="py-3 px-4 album-img">
                         <img
                           src="https://m.media-amazon.com/images/I/61KQDAcJbEL._UF1000,1000_QL80_.jpg"
                           alt="album-copertina"
@@ -361,11 +350,11 @@
                         />
                       </div>
                     </div>
-                    <div class="col-9 d-flex flex-column justify-content-end ps-0">
+                    <div class="col-9 d-flex flex-column justify-content-end px-3 ps-md-0">
                       <div class="p-3">
-                        <p class="mb-0 verified">ALBUM</p>
+                        <p class="mb-0 verified d-none d-md-block">ALBUM</p>
                         <h1 class="mb-3 fw-bolder display-3">Formentera</h1>
-                        <p class="fs-07 fw-bold">
+                        <p class="fs-07 fw-bold d-none d-md-block">
                           <img
                             src="assets/imgs/metric-scaled-modified.jpg"
                             alt="band"
@@ -373,6 +362,16 @@
                           />
                           Metric &#x2022; 2022 &#x2022; 9 brani, <span class="fw-normal">50 min 12 sec.</span>
                         </p>
+                        <p class="d-md-none fw-bold fs-6">
+                          <img
+                            src="assets/imgs/metric-scaled-modified.jpg"
+                            alt="band"
+                            style="width: 25px; border-radius: 50%; aspect-ratio: 1"
+                            class="me-1"
+                          />
+                          Metric
+                        </p>
+                        <p class="fs-6 text-light d-md-none">Album &#x2022; 2022</p>
                       </div>
                     </div>
                   </div>
@@ -395,7 +394,7 @@
                     </div>
                   </div>
                   <!-- canzoni -->
-                  <div class="row px-2 mb-0 gy-0">
+                  <div class="row px-2 mb-0 gy-0 d-none d-md-block">
                     <div class="col-4">
                       <p class="mb-1 ps-2 text-secondary"># TITOLO</p>
                     </div>
@@ -406,11 +405,11 @@
                       <p class="text-end mb-1 pe-3 text-secondary"><i class="bi bi-clock"></i></p>
                     </div>
                   </div>
-                  <hr class="mx-2 mt-0" />
+                  <hr class="mx-2 mt-0 d-none d-md-block" />
                   <div class="row px-2 mb-0 gy-0">
                     <div class="col-4">
                       <div class="row g-2 mb-1 px-1">
-                        <div class="col-1 d-flex align-items-center ps-2 me-1">
+                        <div class="col-1 d-flex align-items-center ps-2 me-1 d-none d-md-block">
                           <div>1</div>
                         </div>
                         <div class="col-10">
@@ -419,17 +418,17 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-none d-md-block">
                       <p class="text-end text-secondary">2.455.344</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-none d-md-block">
                       <p class="text-end text-secondary pe-3">3:18</p>
                     </div>
                   </div>
                   <div class="row px-2 mb-0 gy-0">
                     <div class="col-4">
                       <div class="row g-2 mb-1 px-1">
-                        <div class="col-1 d-flex align-items-center ps-2 me-1">
+                        <div class="col-1 d-flex align-items-center ps-2 me-1 d-none d-md-block">
                           <div>1</div>
                         </div>
                         <div class="col-10">
@@ -438,17 +437,17 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-none d-md-block">
                       <p class="text-end text-secondary">2.455.344</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-none d-md-block">
                       <p class="text-end text-secondary pe-3">3:18</p>
                     </div>
                   </div>
                   <div class="row px-2 mb-0 gy-0">
                     <div class="col-4">
                       <div class="row g-2 mb-1 px-1">
-                        <div class="col-1 d-flex align-items-center ps-2 me-1">
+                        <div class="col-1 d-flex align-items-center ps-2 me-1 d-none d-md-block">
                           <div>1</div>
                         </div>
                         <div class="col-10">
@@ -457,17 +456,17 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-none d-md-block">
                       <p class="text-end text-secondary">2.455.344</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-none d-md-block">
                       <p class="text-end text-secondary pe-3">3:18</p>
                     </div>
                   </div>
                   <div class="row px-2 mb-0 gy-0">
                     <div class="col-4">
                       <div class="row g-2 mb-1 px-1">
-                        <div class="col-1 d-flex align-items-center ps-2 me-1">
+                        <div class="col-1 d-flex align-items-center ps-2 me-1 d-none d-md-block">
                           <div>1</div>
                         </div>
                         <div class="col-10">
@@ -476,17 +475,17 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-none d-md-block">
                       <p class="text-end text-secondary">2.455.344</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-none d-md-block">
                       <p class="text-end text-secondary pe-3">3:18</p>
                     </div>
                   </div>
                   <div class="row px-2 mb-0 gy-0">
                     <div class="col-4">
                       <div class="row g-2 mb-1 px-1">
-                        <div class="col-1 d-flex align-items-center ps-2 me-1">
+                        <div class="col-1 d-flex align-items-center ps-2 me-1 d-none d-md-block">
                           <div>1</div>
                         </div>
                         <div class="col-10">
@@ -495,17 +494,17 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-none d-md-block">
                       <p class="text-end text-secondary">2.455.344</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-none d-md-block">
                       <p class="text-end text-secondary pe-3">3:18</p>
                     </div>
                   </div>
                   <div class="row px-2 mb-0 gy-0">
                     <div class="col-4">
                       <div class="row g-2 mb-1 px-1">
-                        <div class="col-1 d-flex align-items-center ps-2 me-1">
+                        <div class="col-1 d-flex align-items-center ps-2 me-1 d-none d-md-block">
                           <div>1</div>
                         </div>
                         <div class="col-10">
@@ -514,10 +513,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-none d-md-block">
                       <p class="text-end text-secondary">2.455.344</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-none d-md-block">
                       <p class="text-end text-secondary pe-3">3:18</p>
                     </div>
                   </div>
