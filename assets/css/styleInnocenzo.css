@@ -1,3 +1,7 @@
+.back-black {
+  background-color: #141414;
+}
+
 .gradient {
   background: rgb(31, 31, 31);
   background: linear-gradient(
@@ -39,6 +43,10 @@
   background-color: #3a3a3a;
 }
 
+#p-div p {
+  font-size: 0.7rem;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -46,7 +54,7 @@ header {
   z-index: 1000;
 }
 
-#p-div {
+.p-div {
   font-size: 0.6rem;
 }
 
@@ -56,4 +64,247 @@ header {
 
 .card {
   height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  transition: background-color 0.5s ease;
+}
+
+.col-2:hover .card {
+  background-color: #303030;
+}
+
+.col-2:hover .icona {
+  opacity: 1;
+}
+
+.icon-rel {
+  position: relative;
+}
+
+.icon-rel:hover {
+  background-color: #303030;
+}
+
+.icon-rel:hover .icona-top {
+  opacity: 1;
+}
+
+.icona {
+  position: absolute;
+  bottom: -8%;
+  right: -8%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.icona-top {
+  position: absolute;
+  bottom: 0;
+  right: -7%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 35px;
+}
+
+/* ---------------------------------- */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.search-cont {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 75px;
+  align-items: center;
+}
+
+.form-control {
+  padding: 6px 30px;
+  background-color: #3a3a3b;
+}
+
+.fotos {
+  background-color: rgb(220, 20, 140);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 28vh;
+}
+
+.fotos h2 {
+  font-size: 1.3rem;
+  padding: 0.7rem;
+}
+
+.fotos img {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  bottom: 0;
+  right: 0;
+  transform: rotate(25deg) translate(18%, -2%);
+  object-fit: cover;
+  object-position: center center;
+}
+
+.fotos2 {
+  background-color: rgb(0, 100, 80);
+}
+.fotos3 {
+  background-color: rgb(132, 0, 231);
+}
+.fotos4 {
+  background-color: rgb(30, 50, 100);
+}
+.fotos5 {
+  background-color: rgb(232, 17, 91);
+}
+.fotos6 {
+  background-color: rgb(80, 55, 80);
+}
+.fotos7 {
+  background-color: rgb(20, 138, 8);
+}
+.fotos8 {
+  background-color: rgb(80, 55, 80);
+}
+.fotos9 {
+  background-color: rgb(225, 17, 140);
+}
+.fotos10 {
+  background-color: rgb(13, 115, 236);
+}
+.fotos11 {
+  background-color: rgb(142, 102, 172);
+}
+.fotos12 {
+  background-color: rgb(96, 129, 8);
+}
+.fotos13 {
+  background-color: rgb(119, 119, 119);
+}
+.fotos14 {
+  background-color: rgb(141, 103, 171);
+}
+.fotos15 {
+  background-color: rgb(216, 64, 0);
+}
+.fotos16 {
+  background-color: rgb(233, 20, 41);
+}
+.fotos17 {
+  background-color: rgb(233, 20, 41);
+}
+.fotos18 {
+  background-color: rgb(225, 17, 140);
+}
+.fotos19 {
+  background-color: rgb(141, 103, 171);
+}
+.fotos20 {
+  background-color: rgb(45, 70, 185);
+}
+.fotos21 {
+  background-color: rgb(176, 40, 151);
+}
+.fotos22 {
+  background-color: rgb(165, 103, 82);
+}
+.fotos23 {
+  background-color: rgb(119, 119, 119);
+}
+.fotos24 {
+  background-color: rgb(83, 122, 161);
+}
+.fotos25 {
+  background-color: rgb(232, 17, 91);
+}
+.fotos26 {
+  background-color: rgb(186, 93, 7);
+}
+.fotos27 {
+  background-color: rgb(186, 93, 7);
+}
+.fotos28 {
+  background-color: rgb(216, 64, 0);
+}
+.fotos29 {
+  background-color: rgb(230, 30, 50);
+}
+.fotos30 {
+  background-color: rgb(140, 25, 50);
+}
+.fotos31 {
+  background-color: rgb(140, 25, 50);
+}
+.fotos32 {
+  background-color: rgb(20, 138, 8);
+}
+.fotos33 {
+  background-color: rgb(119, 119, 119);
+}
+.fotos34 {
+  background-color: rgb(175, 40, 150);
+}
+.fotos35 {
+  background-color: rgb(80, 55, 80);
+}
+.fotos36 {
+  background-color: rgb(228, 29, 99);
+}
+.fotos37 {
+  background-color: rgb(81, 121, 161);
+}
+.fotos38 {
+  background-color: rgb(30, 50, 100);
+}
+.fotos39 {
+  background-color: rgb(125, 75, 50);
+}
+.fotos40 {
+  background-color: rgb(188, 89, 0);
+}
+.fotos41 {
+  background-color: rgb(220, 20, 140);
+}
+.fotos42 {
+  background-color: rgb(216, 64, 0);
+}
+.fotos43 {
+  background-color: rgb(175, 40, 150);
+}
+.fotos44 {
+  background-color: rgb(235, 30, 50);
+}
+.fotos45 {
+  background-color: rgb(20, 138, 8);
+}
+.fotos46 {
+  background-color: rgb(186, 93, 7);
+}
+.fotos47 {
+  background-color: rgb(13, 114, 237);
+}
+.fotos48 {
+  background-color: rgb(30, 50, 100);
+}
+
+.fotos49 {
+  background-color: rgb(233, 20, 41);
+}
+.fotos50 {
+  background-color: rgb(225, 51, 0);
+}
+.fotos51 {
+  background-color: rgb(83, 122, 161);
+}
+.fotos52 {
+  background-color: rgb(71, 125, 149);
 }
