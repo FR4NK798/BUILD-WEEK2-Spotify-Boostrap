@@ -90,6 +90,14 @@ header {
   opacity: 1;
 }
 
+.icon-rel:hover .icona-top-small {
+  opacity: 1;
+}
+
+.icon-rel:hover .icona-top-xxlarge {
+  opacity: 1;
+}
+
 .icona {
   position: absolute;
   bottom: -8%;
@@ -107,6 +115,26 @@ header {
   opacity: 0;
   transition: opacity 0.3s ease;
   width: 35px;
+}
+
+.icona-top-small {
+  position: absolute;
+  bottom: -20%;
+  right: -6%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 25px;
+}
+
+.icona-top-xxlarge {
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 25px;
 }
 
 /* ---------------------------------- */

@@ -285,7 +285,7 @@
           >
             <!-- centro -->
 
-            <header class="my-2 py-3 back-black">
+            <header class="my-2 py-3 back-black d-none d-md-block">
               <div class="d-flex justify-content-between">
                 <div>
                   <button class="btn p-0 bg-black rounded-circle" style="width: 25px; height: 25px">
@@ -386,19 +386,86 @@
                   </div>
                 </div>
                 <div class="container g-0">
-                  <div class="row">
-                    <h3 class="fs-10">Buonasera</h3>
+                  <div class="row g-0 my-4 my-md-0">
+                    <div class="col">
+                      <h3 class="fs-10">Buonasera</h3>
+                    </div>
+
+                    <div class="col d-flex d-md-none justify-content-around">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="currentColor"
+                          class="bi bi-bell"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"
+                          />
+                        </svg>
+                      </span>
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="currentColor"
+                          class="bi bi-clock-history"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"
+                          />
+                          <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z" />
+                          <path
+                            d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"
+                          />
+                        </svg>
+                      </span>
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="currentColor"
+                          class="bi bi-gear"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"
+                          />
+                          <path
+                            d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
                   </div>
                   <div class="row g-0">
-                    <div class="col-6 col-md-4 mb-2 p-2 ps-0 bg-md-aj">
-                      <div class="row g-0 align-items-center icon-rel">
+                    <div class="col-6 col-md-4 mb-2 pe-2 ps-0">
+                      <div class="row g-0 align-items-center icon-rel bg-aj">
                         <div class="col-3">
-                          <a href=""><img src="./assets/imgs/search/image-1.jpeg" alt="" width="100%" /></a>
+                          <a href="">
+                            <img
+                              src="./assets/imgs/search/image-1.jpeg"
+                              class="d-none d-md-block"
+                              alt=""
+                              width="100%"
+                            />
+                            <img
+                              src="./assets/imgs/search/image-1.jpeg"
+                              class="rounded-start d-md-none"
+                              alt=""
+                              width="100%"
+                            />
+                          </a>
                         </div>
                         <div class="col-9 ps-2">
                           <p class="mb-0 fs-7">Recenti</p>
                         </div>
-                        <a href="" class="icona-top">
+                        <a href="" class="icona-top d-none d-sm-block d-xxl-none">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="30"
@@ -416,17 +483,61 @@
                             />
                           </svg>
                         </a>
+                        <a href="" class="icona-top-small d-sm-none">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                            <path
+                              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+                              class="text-black"
+                            />
+                          </svg>
+                        </a>
+                        <a href="" class="icona-top-xxlarge d-none d-xxl-block">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                            <path
+                              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+                              class="text-black"
+                            />
+                          </svg>
+                        </a>
                       </div>
                     </div>
-                    <div class="col-6 col-md-4 mb-2 p-2 ps-0 bg-md-aj">
-                      <div class="row g-0 align-items-center icon-rel">
+                    <div class="col-6 col-md-4 mb-2 pe-2 ps-0">
+                      <div class="row g-0 align-items-center icon-rel bg-aj">
                         <div class="col-3">
-                          <a href=""><img src="./assets/imgs/main/image-18.jpg" alt="" width="100%" /></a>
+                          <a href="">
+                            <img src="./assets/imgs/main/image-18.jpg" class="d-none d-md-block" alt="" width="100%" />
+                            <img
+                              src="./assets/imgs/main/image-18.jpg"
+                              class="rounded-start d-md-none"
+                              alt=""
+                              width="100%"
+                            />
+                          </a>
                         </div>
                         <div class="col-9 ps-2">
                           <p class="mb-0 fs-7">Le migliori canzoni dell'estate 2022</p>
                         </div>
-                        <a href="" class="icona-top">
+                        <a href="" class="icona-top d-none d-sm-block d-xxl-none">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="30"
@@ -444,17 +555,61 @@
                             />
                           </svg>
                         </a>
+                        <a href="" class="icona-top-small d-sm-none">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                            <path
+                              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+                              class="text-black"
+                            />
+                          </svg>
+                        </a>
+                        <a href="" class="icona-top-xxlarge d-none d-xxl-block">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                            <path
+                              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+                              class="text-black"
+                            />
+                          </svg>
+                        </a>
                       </div>
                     </div>
-                    <div class="col-6 col-md-4 mb-2 p-2 ps-0 bg-md-aj">
-                      <div class="row g-0 align-items-center icon-rel">
+                    <div class="col-6 col-md-4 mb-2 pe-2 ps-0">
+                      <div class="row g-0 align-items-center icon-rel bg-aj">
                         <div class="col-3">
-                          <a href=""><img src="./assets/imgs/search/image-7.jpg" alt="" width="100%" /></a>
+                          <a href="">
+                            <img src="./assets/imgs/search/image-7.jpg" class="d-none d-md-block" alt="" width="100%" />
+                            <img
+                              src="./assets/imgs/search/image-7.jpg"
+                              class="rounded-start d-md-none"
+                              alt=""
+                              width="100%"
+                            />
+                          </a>
                         </div>
                         <div class="col-9 ps-2">
                           <p class="mb-0 fs-7">La miglior musica rock</p>
                         </div>
-                        <a href="" class="icona-top">
+                        <a href="" class="icona-top d-none d-sm-block d-xxl-none">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="30"
@@ -472,18 +627,62 @@
                             />
                           </svg>
                         </a>
+                        <a href="" class="icona-top-small d-sm-none">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                            <path
+                              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+                              class="text-black"
+                            />
+                          </svg>
+                        </a>
+                        <a href="" class="icona-top-xxlarge d-none d-xxl-block">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                            <path
+                              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+                              class="text-black"
+                            />
+                          </svg>
+                        </a>
                       </div>
                     </div>
 
-                    <div class="col-6 col-md-4 mb-2 p-2 ps-0 bg-md-aj">
-                      <div class="row g-0 align-items-center icon-rel">
+                    <div class="col-6 col-md-4 mb-2 pe-2 ps-0">
+                      <div class="row g-0 align-items-center icon-rel bg-aj">
                         <div class="col-3">
-                          <a href=""><img src="./assets/imgs/search/image-8.jpg" alt="" width="100%" /></a>
+                          <a href="">
+                            <img src="./assets/imgs/search/image-8.jpg" class="d-none d-md-block" alt="" width="100%" />
+                            <img
+                              src="./assets/imgs/search/image-8.jpg"
+                              class="rounded-start d-md-none"
+                              alt=""
+                              width="100%"
+                            />
+                          </a>
                         </div>
                         <div class="col-9 ps-2">
                           <p class="mb-0 fs-7">Allenati al top, grazie a questa playlist</p>
                         </div>
-                        <a href="" class="icona-top">
+                        <a href="" class="icona-top d-none d-sm-block d-xxl-none">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="30"
@@ -501,17 +700,66 @@
                             />
                           </svg>
                         </a>
+                        <a href="" class="icona-top-small d-sm-none">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                            <path
+                              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+                              class="text-black"
+                            />
+                          </svg>
+                        </a>
+                        <a href="" class="icona-top-xxlarge d-none d-xxl-block">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                            <path
+                              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+                              class="text-black"
+                            />
+                          </svg>
+                        </a>
                       </div>
                     </div>
-                    <div class="col-6 col-md-4 mb-2 p-2 ps-0 bg-md-aj">
-                      <div class="row g-0 align-items-center icon-rel">
+                    <div class="col-6 col-md-4 mb-2 pe-2 ps-0">
+                      <div class="row g-0 align-items-center icon-rel bg-aj">
                         <div class="col-3">
-                          <a href=""><img src="./assets/imgs/search/image-14.jpg" alt="" width="100%" /></a>
+                          <a href="">
+                            <img
+                              src="./assets/imgs/search/image-14.jpg"
+                              class="d-none d-md-block"
+                              alt=""
+                              width="100%"
+                            />
+                            <img
+                              src="./assets/imgs/search/image-14.jpg"
+                              class="rounded-start d-md-none"
+                              alt=""
+                              width="100%"
+                            />
+                          </a>
                         </div>
                         <div class="col-9 ps-2">
                           <p class="mb-0 fs-7">Global, le migliori canzoni del momento</p>
                         </div>
-                        <a href="" class="icona-top">
+                        <a href="" class="icona-top d-none d-sm-block d-xxl-none">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="30"
@@ -529,46 +777,127 @@
                             />
                           </svg>
                         </a>
+                        <a href="" class="icona-top-small d-sm-none">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                            <path
+                              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+                              class="text-black"
+                            />
+                          </svg>
+                        </a>
+                        <a href="" class="icona-top-xxlarge d-none d-xxl-block">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                            <path
+                              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+                              class="text-black"
+                            />
+                          </svg>
+                        </a>
                       </div>
                     </div>
-                    <div class="col-6 col-md-4 mb-2 p-2 ps-0 bg-md-aj">
-                      <a href="">
-                        <div class="row g-0 align-items-center icon-rel">
-                          <div class="col-3">
-                            <a href="">
-                              <img src="./assets/imgs/search/image-31.jpg" alt="" width="100%" />
-                            </a>
-                          </div>
-                          <div class="col-9 ps-2">
-                            <p class="mb-0 fs-7">Metal, punk e molto altro</p>
-                          </div>
-
-                          <a href="" class="icona-top">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="30"
-                              height="30"
-                              fill="currentColor"
-                              class="bi bi-play-circle-fill"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
-                              />
-                              <path
-                                d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
-                                class="text-black"
-                              />
-                            </svg>
+                    <div class="col-6 col-md-4 mb-2 pe-2 ps-0">
+                      <div class="row g-0 align-items-center icon-rel bg-aj">
+                        <div class="col-3">
+                          <a href="">
+                            <img
+                              src="./assets/imgs/search/image-31.jpg"
+                              class="d-none d-md-block"
+                              alt=""
+                              width="100%"
+                            />
+                            <img
+                              src="./assets/imgs/search/image-31.jpg"
+                              class="rounded-start d-md-none"
+                              alt=""
+                              width="100%"
+                            />
                           </a>
                         </div>
-                      </a>
+                        <div class="col-9 ps-2">
+                          <p class="mb-0 fs-7">Metal, punk e molto altro</p>
+                        </div>
+
+                        <a href="" class="icona-top d-none d-sm-block d-xxl-none">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="30"
+                            height="30"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                            <path
+                              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+                              class="text-black"
+                            />
+                          </svg>
+                        </a>
+                        <a href="" class="icona-top-small d-sm-none">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                            <path
+                              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+                              class="text-black"
+                            />
+                          </svg>
+                        </a>
+                        <a href="" class="icona-top-xxlarge d-none d-xxl-block">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                            <path
+                              d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+                              class="text-black"
+                            />
+                          </svg>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <main>
                   <div class="container g-0">
-                    <div class="d-flex mt-3 justify-content-between align-items-baseline mb-1 d-none d-md-block">
+                    <div class="mt-3 justify-content-between align-items-baseline mb-1 d-none d-md-flex">
                       <h3 class="fs-11">In primo piano</h3>
                       <a href="" class="fs-9 text-decoration-none text-card-p-gray">VISUALIZZA TUTTO</a>
                     </div>
@@ -795,9 +1124,11 @@
                     </div>
                   </div>
                   <div class="container g-0">
-                    <div class="d-flex mt-3 justify-content-between align-items-baseline mb-1 d-none d-md-block">
+                    <div class="d-flex mt-3 justify-content-between align-items-baseline mb-1">
                       <h3 class="fs-11">Altro di ciò che ti piace</h3>
-                      <a href="" class="fs-9 text-decoration-none text-card-p-gray">VISUALIZZA TUTTO</a>
+                      <a href="" class="fs-9 text-decoration-none text-card-p-gray d-none d-md-block"
+                        >VISUALIZZA TUTTO</a
+                      >
                     </div>
                     <div class="row g-0 justify-content-between">
                       <div class="col-12 col-md-2 mb-2 p-0 bg-aj rounded-2">
@@ -1023,9 +1354,11 @@
                     </div>
                   </div>
                   <div class="container g-0">
-                    <div class="d-flex mt-3 justify-content-between align-items-baseline mb-1 d-none d-md-block">
+                    <div class="d-flex mt-3 justify-content-between align-items-baseline mb-1">
                       <h3 class="fs-11">Playlist tutte da scoprire</h3>
-                      <a href="" class="fs-9 text-decoration-none text-card-p-gray">VISUALIZZA TUTTO</a>
+                      <a href="" class="fs-9 text-decoration-none text-card-p-gray d-none d-md-block"
+                        >VISUALIZZA TUTTO</a
+                      >
                     </div>
                     <div class="row g-0 justify-content-between">
                       <div class="col-12 col-md-2 mb-2 p-0 bg-aj rounded-2">
@@ -1456,7 +1789,7 @@
     <!-- player -->
     <section class="container-fluid fixed-bottom d-flex justify-content-between" style="background-color: black">
       <!-- <section class="container-fluid bg-black fixed-bottom"> -->
-      <div class="d-flex align-items-center">
+      <div class="align-items-center d-none d-md-flex">
         <img src="./assets/imgs/main/image-1.jpg" alt="" class="rounded playerImg" />
         <div class="infoSong">
           <h2 class="text-light">canzone</h2>
@@ -1465,7 +1798,7 @@
         <img src="./assets/imgs/icons/heart.svg" alt="" />
       </div>
       <!-- prova lettoreeeeh -->
-      <div class="d-flex flex-column mt-2">
+      <div class="flex-column mt-2 d-none d-md-flex">
         <div class="d-flex justify-content-center align-items-center gap-4">
           <img src="./assets/imgs/icons/icons8-shuffle-100.png" alt="" style="height: 1.5em" />
           <img src="./assets/imgs/icons/skip-start-sm.svg" alt="" style="height: 1.2em" />
@@ -1495,7 +1828,7 @@
         </div>
         <!-- ultimo div -->
       </div>
-      <div class="d-flex align-items-center gap-2" style="font-size: x-small">
+      <div class="align-items-center gap-2 d-none d-md-flex" style="font-size: x-small">
         <img src="./assets/imgs/icons/microphone (1).png" alt="" style="height: 1.8em" />
         <img src="./assets/imgs/icons/icons8-menu (1).svg" alt="" style="height: 1.8em" />
         <img src="./assets/imgs/icons/speaker.svg" alt="" style="height: 1.8em" />
@@ -1514,6 +1847,74 @@
           </div>
         </div>
         <img src="./assets/imgs/icons/arrow.png" alt="" style="height: 1.8em; margin-inline-end: 1em" />
+      </div>
+      <!-- -------------------------------------- -->
+      <div class="container d-md-none">
+        <div class="row g-0 justify-content-evenly">
+          <div class="col-2 d-flex flex-column align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
+              <g
+                fill="#ffffff"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <g transform="scale(5.33333,5.33333)">
+                  <path
+                    d="M23.95117,4c-0.31984,0.01092 -0.62781,0.12384 -0.87891,0.32227l-14.21289,11.19727c-1.8039,1.42163 -2.85937,3.59398 -2.85937,5.89063v19.08984c0,1.36359 1.13641,2.5 2.5,2.5h10c1.36359,0 2.5,-1.13641 2.5,-2.5v-10c0,-0.29504 0.20496,-0.5 0.5,-0.5h5c0.29504,0 0.5,0.20496 0.5,0.5v10c0,1.36359 1.13641,2.5 2.5,2.5h10c1.36359,0 2.5,-1.13641 2.5,-2.5v-19.08984c0,-2.29665 -1.05548,-4.46899 -2.85937,-5.89062l-14.21289,-11.19727c-0.27738,-0.21912 -0.62324,-0.33326 -0.97656,-0.32227zM24,7.41016l13.28516,10.4668c1.0841,0.85437 1.71484,2.15385 1.71484,3.5332v18.58984h-9v-9.5c0,-1.91495 -1.58505,-3.5 -3.5,-3.5h-5c-1.91495,0 -3.5,1.58505 -3.5,3.5v9.5h-9v-18.58984c0,-1.37935 0.63074,-2.67883 1.71484,-3.5332z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <a class="nav-link text-white flex-grow-1 ms-md-3 fs-12" href="#">Home</a>
+          </div>
+          <!--  -->
+          <div class="col-2 d-flex flex-column align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+            <a class="nav-link text-white flex-grow-1 ms-md-3 fs-12" href="./search-page.html">Cerca</a>
+          </div>
+          <!--  -->
+          <div class="col-3 d-flex flex-column align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-music-note-list"
+              viewBox="0 0 16 16"
+            >
+              <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2" />
+              <path fill-rule="evenodd" d="M12 3v10h-1V3z" />
+              <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5m0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5m0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+            <a class="nav-link text-white flex-grow-1 ms-md-3 fs-12" href="#">La tua libreria</a>
+          </div>
+        </div>
       </div>
     </section>
     <script
