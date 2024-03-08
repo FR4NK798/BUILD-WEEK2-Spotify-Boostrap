@@ -96,16 +96,23 @@ h6 {
 
 /* album */
 
-.middle-album-section {
+.middle-album-col {
   background: rgb(225, 195, 80);
-  background: linear-gradient(180deg, rgba(225, 195, 80, 1) 0%, rgba(161, 139, 52, 1) 70%, rgba(101, 88, 39, 1) 100%);
-  height: 30vh;
+  background: linear-gradient(180deg, rgba(225, 195, 80, 1) 0%, rgba(161, 139, 52, 1) 0%, rgba(18, 18, 1, 1) 50%);
 }
 
-.songs-album-section {
-  font-size: 0.8rem;
-  background: rgba(101, 88, 39, 1);
-  background: linear-gradient(180deg, rgba(101, 88, 39, 1) 0%, rgba(85, 74, 31, 1) 1%, rgba(18, 18, 18, 1) 43%);
+@media screen and (min-width: 768px) {
+  .middle-album-section {
+    background: rgb(225, 195, 80);
+    background: linear-gradient(180deg, rgba(225, 195, 80, 1) 0%, rgba(161, 139, 52, 1) 70%, rgba(101, 88, 39, 1) 100%);
+    height: 30vh;
+  }
+
+  .songs-album-section {
+    font-size: 0.8rem;
+    background: rgba(101, 88, 39, 1);
+    background: linear-gradient(180deg, rgba(101, 88, 39, 1) 0%, rgba(85, 74, 31, 1) 1%, rgba(18, 18, 18, 1) 43%);
+  }
 }
 
 .album-img img {
