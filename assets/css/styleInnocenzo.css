@@ -146,6 +146,12 @@ header {
 .fix-play {
   bottom: 80px;
 }
+/* ------------- */
+footer {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+
 /* ---------------------------------- */
 
 a {
@@ -172,7 +178,7 @@ a {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 28vh;
+  min-height: 28vh;
 }
 
 .fotos h2 {
@@ -344,4 +350,45 @@ a {
 }
 .fotos52 {
   background-color: rgb(71, 125, 149);
+}
+
+/* ----------------------------------------------- */
+@media screen and (max-width: 767px) {
+  .fotos {
+    min-height: 15vh;
+  }
+
+  .fotos img {
+    width: 80px;
+    height: 70px;
+    transform: rotate(25deg) translate(30%, 0%);
+  }
+
+  footer {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  #search-div {
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 991px) {
+  #search-div {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .fotos {
+    min-height: 28vh;
+  }
+}
+@media screen and (min-height: 651px) {
+  .fotos {
+    min-height: 20vh;
+  }
 }
