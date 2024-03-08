@@ -32,7 +32,7 @@
       <div class="container-fluid g-0">
         <div class="row g-0">
           <!-- sinistra -->
-          <div class="col-3 ps-0 pe-0">
+          <div class="col-3 d-none d-lg-block ps-0 pe-0">
             <!-- inizio -->
 
             <nav class="navbar py-4 ps-4 pe-0 bg-black text-white d-block">
@@ -279,18 +279,16 @@
             <!-- fine -->
           </div>
           <div
-            class="col-7 bg-back-black text-white px-3"
+            class="col-12 col-lg-9 col-xl-7 bg-back-black text-white px-3"
             id="scroll"
-            style="height: calc(100vh - 80px); overflow: auto"
+            style="height: calc(100vh - 70px); overflow: auto"
           >
             <!-- centro -->
 
-            <!-- inizo COPIARE -->
-
             <header class="my-2 py-3 bg-back-black">
-              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex justify-content-center justify-content-lg-between align-items-center">
                 <div class="d-flex align-items-center column-gap-2">
-                  <button class="btn p-0 bg-black rounded-circle" style="width: 25px; height: 25px">
+                  <button class="btn p-0 bg-black rounded-circle d-none d-lg-block" style="width: 25px; height: 25px">
                     <svg xmlns="http://www.w3.org/2000/svg" height="20" width="12.5" viewBox="0 0 320 512" class="pb-1">
                       <path
                         fill="#c2c2c2"
@@ -298,7 +296,10 @@
                       />
                     </svg>
                   </button>
-                  <button class="btn p-0 ps-1 bg-black rounded-circle" style="width: 25px; height: 25px">
+                  <button
+                    class="btn p-0 ps-1 bg-black rounded-circle d-none d-lg-block"
+                    style="width: 25px; height: 25px"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="20"
@@ -313,7 +314,7 @@
                     </svg>
                   </button>
                   <div>
-                    <div style="width: 18rem">
+                    <div id="search-div">
                       <form role="search">
                         <input
                           class="form-control me-2 rounded-pill bg-search border-0"
@@ -322,7 +323,7 @@
                           aria-label="Search"
                         />
                       </form>
-                      <div class="d-flex search-cont">
+                      <div class="d-none d-lg-flex search-cont">
                         <span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -341,7 +342,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="dropdown-center d-flex">
+                <div class="dropdown-center d-none d-lg-flex">
                   <button
                     class="btn bg-black dropdown-toggle text-white ps-0 py-0 fs-8 rounded-5"
                     type="button"
@@ -359,15 +360,14 @@
                 </div>
               </div>
             </header>
-
             <div>
               <div>
-                <div class="container g-0">
+                <div class="container g-0 mt-2 mt-lg-0">
                   <div class="row">
                     <h3 class="fs-10">Sfoglia tutto</h3>
                   </div>
-                  <div class="row mt-2">
-                    <div class="col-3">
+                  <div class="row mt-2 row-gap-2 row-gap-lg-0">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos">
@@ -376,7 +376,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos2">
@@ -385,7 +385,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos3">
@@ -394,7 +394,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos4">
@@ -404,8 +404,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row mt-4">
-                    <div class="col-3">
+                  <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos5">
@@ -414,7 +414,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos6">
@@ -423,7 +423,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos7">
@@ -432,7 +432,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos8">
@@ -442,8 +442,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row mt-4">
-                    <div class="col-3">
+                  <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos9">
@@ -452,7 +452,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos10">
@@ -461,7 +461,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos11">
@@ -470,7 +470,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos12">
@@ -480,8 +480,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row mt-4">
-                    <div class="col-3">
+                  <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos13">
@@ -490,7 +490,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos14">
@@ -499,7 +499,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos15">
@@ -508,7 +508,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos16">
@@ -518,8 +518,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row mt-4">
-                    <div class="col-3">
+                  <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos17">
@@ -528,7 +528,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos18">
@@ -537,7 +537,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos19">
@@ -546,7 +546,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos20">
@@ -556,8 +556,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row mt-4">
-                    <div class="col-3">
+                  <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos21">
@@ -566,7 +566,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos22">
@@ -575,7 +575,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos23">
@@ -584,7 +584,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos24">
@@ -594,8 +594,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row mt-4">
-                    <div class="col-3">
+                  <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos25">
@@ -604,7 +604,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos26">
@@ -613,7 +613,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos27">
@@ -622,7 +622,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos28">
@@ -632,8 +632,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row mt-4">
-                    <div class="col-3">
+                  <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos29">
@@ -642,7 +642,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos30">
@@ -651,7 +651,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos31">
@@ -660,7 +660,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos32">
@@ -670,8 +670,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row mt-4">
-                    <div class="col-3">
+                  <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos33">
@@ -680,7 +680,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos34">
@@ -689,7 +689,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos35">
@@ -698,7 +698,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos36">
@@ -708,8 +708,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row mt-4">
-                    <div class="col-3">
+                  <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos37">
@@ -718,7 +718,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos38">
@@ -727,7 +727,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos39">
@@ -736,7 +736,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos40">
@@ -746,8 +746,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row mt-4">
-                    <div class="col-3">
+                  <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos41">
@@ -756,7 +756,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos42">
@@ -765,7 +765,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos43">
@@ -774,7 +774,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos44">
@@ -784,8 +784,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row mt-4">
-                    <div class="col-3">
+                  <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos45">
@@ -794,7 +794,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos46">
@@ -803,7 +803,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos47">
@@ -812,7 +812,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos48">
@@ -822,8 +822,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row mt-4">
-                    <div class="col-3">
+                  <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos49">
@@ -832,7 +832,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos50">
@@ -841,7 +841,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos51">
@@ -850,7 +850,7 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                       <div>
                         <a href="">
                           <div class="fotos fotos52">
@@ -867,11 +867,10 @@
                 </main>
               </div>
             </div>
-
-            <footer class="my-14">
+            <footer>
               <div class="row g-0">
-                <div class="d-flex gap-2">
-                  <div class="col-2 p-0 fs-11">
+                <div class="d-flex gap-2 flex-column flex-md-row">
+                  <div class="col-12 col-md-2 p-0 fs-11">
                     <ul class="list-style-none p-0 text-card-p-gray">
                       <li class="text-white fw-bold">
                         <a href="" class="text-decoration-none text-card-p-gray">Azienda</a>
@@ -881,7 +880,7 @@
                       <li><a href="" class="text-decoration-none text-card-p-gray">For the Record</a></li>
                     </ul>
                   </div>
-                  <div class="col-2 p-0 fs-11">
+                  <div class="col-12 col-md-2 p-0 fs-11">
                     <ul class="list-style-none p-0 text-card-p-gray">
                       <li class="text-white fw-bold">
                         <a href="" class="text-decoration-none text-card-p-gray">Community</a>
@@ -893,7 +892,7 @@
                       <li><a href="" class="text-decoration-none text-card-p-gray">Venditori</a></li>
                     </ul>
                   </div>
-                  <div class="col-3 p-0 fs-11 pe-2">
+                  <div class="col-12 col-md-3 p-0 fs-11 pe-2">
                     <ul class="list-style-none p-0 text-card-p-gray">
                       <li class="text-white fw-bold">
                         <a href="" class="text-decoration-none text-card-p-gray">Link utili</a>
@@ -904,8 +903,8 @@
                     </ul>
                   </div>
 
-                  <div class="col-2 ms-auto">
-                    <div class="d-flex gap-lg-1 justify-content-between">
+                  <div class="col-12 col-md-2 ms-md-auto">
+                    <div class="d-flex gap-1 justify-content-lg-between">
                       <div class="pt-0 px-2 pb-15 rounded-circle bg-icon-gray">
                         <a href="">
                           <svg
@@ -960,7 +959,7 @@
               </div>
               <hr class="mb-4" />
 
-              <div class="d-flex">
+              <div class="d-flex flex-column flex-md-row justify-content-between">
                 <div class="d-flex column-gap-3 flex-wrap">
                   <p class="mb-1 fs-12">
                     <a href="" class="text-decoration-none text-card-p-gray"> Informazioni legali </a>
@@ -982,13 +981,13 @@
 
                   <p class="mb-1 fs-12"><a href="" class="text-decoration-none text-card-p-gray"> Accessibilità</a></p>
                 </div>
-                <div class="d-flex" style="width: 10rem">
+                <div class="d-flex ms-auto ms-md-0">
                   <p class="fs-11 text-card-p-gray">&copy;2024 Spotify AB</p>
                 </div>
               </div>
             </footer>
           </div>
-          <div class="col-2 px-3 bg-black vh-100">
+          <div class="col-2 d-none d-xl-block px-3 bg-black vh-100">
             <!-- col destra -->
 
             <div class="right-side">
@@ -1068,7 +1067,10 @@
     </section>
 
     <!-- player -->
-    <section class="container-fluid fixed-bottom d-flex justify-content-between" style="background-color: black">
+    <section
+      class="container-fluid fixed-bottom d-flex justify-content-between d-none d-sm-none d-lg-flex"
+      style="background-color: black"
+    >
       <!-- <section class="container-fluid bg-black fixed-bottom"> -->
       <div class="d-flex align-items-center">
         <img src="./assets/imgs/main/image-1.jpg" alt="" class="rounded playerImg" />
@@ -1089,7 +1091,7 @@
           <img src="./assets/imgs/icons/skip-end-sm.svg" alt="" style="height: 1.2em" />
           <img src="./assets/imgs/icons/repeat.svg" alt="" style="height: 1.5em" />
         </div>
-        <div class="time d-flex align-items-center mt-2">
+        <div class="time align-items-center mt-2 d-none d-lg-flex">
           <p class="grey d-inline-block ms-1 me-1">0:11</p>
           <div class="d-flex align-items-center prova">
             <div
@@ -1109,7 +1111,7 @@
         </div>
         <!-- ultimo div -->
       </div>
-      <div class="d-flex align-items-center gap-2" style="font-size: x-small">
+      <div class="align-items-center gap-2 d-none d-lg-flex" style="font-size: x-small">
         <img src="./assets/imgs/icons/microphone (1).png" alt="" style="height: 1.8em" />
         <img src="./assets/imgs/icons/icons8-menu (1).svg" alt="" style="height: 1.8em" />
         <img src="./assets/imgs/icons/speaker.svg" alt="" style="height: 1.8em" />
@@ -1130,6 +1132,139 @@
         <img src="./assets/imgs/icons/arrow.png" alt="" style="height: 1.8em; margin-inline-end: 1em" />
       </div>
     </section>
+
+    <!-- ------------------------ -->
+    <div class="container-fluid fixed-bottom fix-play d-lg-none">
+      <div class="row g-0 gap-3 px-3 py-2 mx-2 align-items-center justify-content-center player-row rounded-3">
+        <div class="col-1">
+          <img src="./assets/imgs/main/image-10.jpg" alt="" class="rounded-circle" width="100%" />
+        </div>
+        <div class="col-4">
+          <p class="mb-0 text-white">Viva la vida</p>
+        </div>
+        <div class="col-1">
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-music-player text-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1zm1 0v3h6V3zm3 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+              />
+              <path d="M11 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-3 2a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+              <path
+                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="col-1">
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              fill="currentColor"
+              class="bi bi-heart text-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="col-1">
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              fill="currentColor"
+              class="bi bi-play-fill text-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid fixed-bottom py-3 d-lg-none bg-black">
+      <div class="row g-0 justify-content-evenly">
+        <div class="col-2 d-flex flex-column align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
+            <g
+              fill="#ffffff"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <g transform="scale(5.33333,5.33333)">
+                <path
+                  d="M23.95117,4c-0.31984,0.01092 -0.62781,0.12384 -0.87891,0.32227l-14.21289,11.19727c-1.8039,1.42163 -2.85937,3.59398 -2.85937,5.89063v19.08984c0,1.36359 1.13641,2.5 2.5,2.5h10c1.36359,0 2.5,-1.13641 2.5,-2.5v-10c0,-0.29504 0.20496,-0.5 0.5,-0.5h5c0.29504,0 0.5,0.20496 0.5,0.5v10c0,1.36359 1.13641,2.5 2.5,2.5h10c1.36359,0 2.5,-1.13641 2.5,-2.5v-19.08984c0,-2.29665 -1.05548,-4.46899 -2.85937,-5.89062l-14.21289,-11.19727c-0.27738,-0.21912 -0.62324,-0.33326 -0.97656,-0.32227zM24,7.41016l13.28516,10.4668c1.0841,0.85437 1.71484,2.15385 1.71484,3.5332v18.58984h-9v-9.5c0,-1.91495 -1.58505,-3.5 -3.5,-3.5h-5c-1.91495,0 -3.5,1.58505 -3.5,3.5v9.5h-9v-18.58984c0,-1.37935 0.63074,-2.67883 1.71484,-3.5332z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <a class="nav-link text-white flex-grow-1 fs-12" href="#">Home</a>
+        </div>
+        <!--  -->
+        <div class="col-2 d-flex flex-column align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              class="text-white"
+            />
+          </svg>
+          <a class="nav-link text-white flex-grow-1 fs-12" href="./search-page.html">Cerca</a>
+        </div>
+        <!--  -->
+        <div class="col-3 d-flex flex-column align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-music-note-list text-white"
+            viewBox="0 0 16 16"
+          >
+            <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2" />
+            <path fill-rule="evenodd" d="M12 3v10h-1V3z" />
+            <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1z" />
+            <path
+              fill-rule="evenodd"
+              d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5m0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5m0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+          <a class="nav-link text-white flex-grow-1 fs-12" href="#">La tua libreria</a>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

@@ -33,7 +33,7 @@
       <div class="container-fluid g-0">
         <div class="row g-0">
           <!-- sinistra -->
-          <div class="col-3 d-none d-md-block ps-0 pe-0">
+          <div class="col-3 d-none d-lg-block ps-0 pe-0">
             <!-- inizio -->
 
             <nav class="navbar py-4 ps-4 pe-0 bg-black text-white d-block">
@@ -85,7 +85,7 @@
                         </g>
                       </g>
                     </svg>
-                    <a class="nav-link text-white flex-grow-1 ms-3" href="#">Home</a>
+                    <a class="nav-link text-white flex-grow-1 ms-3" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item d-flex align-items-center">
                     <svg
@@ -100,7 +100,7 @@
                         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
                       />
                     </svg>
-                    <a class="nav-link text-white flex-grow-1 ms-3" href="./search-page.html">Cerca</a>
+                    <a class="nav-link text-white flex-grow-1 ms-3" href="#">Cerca</a>
                   </li>
                   <li class="nav-item d-flex align-items-center mb-4">
                     <svg
@@ -280,7 +280,7 @@
             <!-- fine -->
           </div>
           <div
-            class="col-12 col-md-9 col-lg-7 back-black text-white px-3"
+            class="col-12 col-lg-9 col-xl-7 back-black text-white px-3"
             id="scroll"
             style="height: calc(100vh - 70px); overflow: auto"
           >
@@ -597,15 +597,15 @@
                     <div class="col-6 col-md-4 mb-2 pe-2 ps-0">
                       <div class="row g-0 align-items-center icon-rel">
                         <div class="col-3">
-                          <a href="">
-                            <img src="./assets/imgs/search/image-7.jpg" class="d-none d-md-block" alt="" width="100%" />
-                            <img
-                              src="./assets/imgs/search/image-7.jpg"
-                              class="rounded-start d-md-none"
-                              alt=""
-                              width="100%"
-                            />
-                          </a>
+                          <!-- <a href=""> -->
+                          <img src="./assets/imgs/search/image-7.jpg" class="d-none d-md-block" alt="" width="100%" />
+                          <img
+                            src="./assets/imgs/search/image-7.jpg"
+                            class="rounded-start d-md-none"
+                            alt=""
+                            width="100%"
+                          />
+                          <!-- </a> -->
                         </div>
                         <div class="col-9 ps-2">
                           <p class="mb-0 fs-7">La miglior musica rock</p>
@@ -935,7 +935,7 @@
                                   </a>
                                 </div>
                               </div>
-                              <div class="col-6 col-md-12">
+                              <div class="col-6 col-md-12" id="playListJazz">
                                 <div class="card-body p-0 ps-7 ps-md-0">
                                   <p class="card-title mt-2 mb-0 fs-8 d-md-none">Playlist</p>
                                   <p class="card-title mt-2 mb-0 fs-8 fw-bold">Jazz</p>
@@ -1003,7 +1003,7 @@
                           <a href="">
                             <div class="row g-0">
                               <div class="col-6 col-md-12">
-                                <div class="icon-rel">
+                                <div class="icon-rel" id="playListBuongiorno">
                                   <img
                                     src="./assets/imgs/main/image-7.jpg"
                                     class="card-img-top card-img-bottom"
@@ -1098,7 +1098,7 @@
                         <div class="card text-white p-7 p-md-2">
                           <a href="">
                             <div class="row g-0">
-                              <div class="col-6 col-md-12">
+                              <div class="col-6 col-md-12" id="playlistNextgen">
                                 <div class="icon-rel">
                                   <img
                                     src="./assets/imgs/main/image-8.jpg"
@@ -1194,7 +1194,7 @@
                         <div class="card text-white p-7 p-md-2">
                           <a href="">
                             <div class="row g-0">
-                              <div class="col-6 col-md-12">
+                              <div class="col-6 col-md-12" id="playlistSottoladoccia">
                                 <div class="icon-rel">
                                   <img
                                     src="./assets/imgs/main/image-9.jpg"
@@ -1290,7 +1290,7 @@
                         <div class="card text-white p-7 p-md-2">
                           <a href="">
                             <div class="row g-0">
-                              <div class="col-6 col-md-12">
+                              <div class="col-6 col-md-12" id="playlistBuonumore">
                                 <div class="icon-rel">
                                   <img
                                     src="./assets/imgs/main/image-10.jpg"
@@ -2495,7 +2495,7 @@
               </footer>
             </div>
           </div>
-          <div class="col-2 d-none d-lg-block px-3 bg-black vh-100">
+          <div class="col-2 d-none d-xl-block px-3 bg-black vh-100">
             <!-- col destra -->
 
             <div class="right-side">
@@ -2744,7 +2744,7 @@
               </g>
             </g>
           </svg>
-          <a class="nav-link text-white flex-grow-1 ms-md-3 fs-12" href="#">Home</a>
+          <a class="nav-link text-white flex-grow-1 ms-md-3 fs-12" href="./index.html">Home</a>
         </div>
         <!--  -->
         <div class="col-2 d-flex flex-column align-items-center">
@@ -2787,6 +2787,7 @@
     </div>
     <!-- tasti player -->
     <script src="./assets/js/tastoPlay.js"></script>
+    <script src="./assets/js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
