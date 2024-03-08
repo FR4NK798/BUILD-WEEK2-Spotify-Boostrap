@@ -62,13 +62,44 @@ h6 {
   border: 1px solid white;
 }
 
+.btn-seguiti {
+  background-color: rgba(0, 0, 0, 0.082);
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-seguiti:hover {
+  background-color: black;
+}
+
 .songs-section {
   font-size: 0.8rem;
   background: rgb(45, 45, 45);
   background: linear-gradient(180deg, rgba(45, 45, 45, 1) 0%, rgba(24, 24, 24, 1) 33%, rgba(11, 11, 11, 1) 100%);
 }
 
-.bi-play-circle-fill {
+.bi-play-circle-fill,
+.bi-shuffle {
+  color: #1ed760;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.bi-play-circle-fill:hover {
+  color: #006401;
+}
+
+.bi-shuffle:hover {
+  color: #006401;
+}
+
+.play-sm {
+  color: #006401;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.play-sm:hover {
   color: #1ed760;
 }
 
@@ -76,18 +107,32 @@ h6 {
   color: #3d91f4;
 }
 
-/* album */
-
-.middle-album-section {
-  background: rgb(225, 195, 80);
-  background: linear-gradient(180deg, rgba(225, 195, 80, 1) 0%, rgba(161, 139, 52, 1) 70%, rgba(101, 88, 39, 1) 100%);
-  height: 30vh;
+.bi-three-dots,
+.bi-heart,
+.bi-arrow-down-circle,
+.bi-three-dots-vertical {
+  cursor: pointer;
 }
 
-.songs-album-section {
-  font-size: 0.8rem;
-  background: rgba(101, 88, 39, 1);
-  background: linear-gradient(180deg, rgba(101, 88, 39, 1) 0%, rgba(85, 74, 31, 1) 1%, rgba(18, 18, 18, 1) 43%);
+/* album */
+
+.middle-album-col {
+  background: rgb(225, 195, 80);
+  background: linear-gradient(180deg, rgba(225, 195, 80, 1) 0%, rgba(161, 139, 52, 1) 0%, rgba(18, 18, 1, 1) 50%);
+}
+
+@media screen and (min-width: 768px) {
+  .middle-album-section {
+    background: rgb(225, 195, 80);
+    background: linear-gradient(180deg, rgba(225, 195, 80, 1) 0%, rgba(161, 139, 52, 1) 70%, rgba(101, 88, 39, 1) 100%);
+    height: 30vh;
+  }
+
+  .songs-album-section {
+    font-size: 0.8rem;
+    background: rgba(101, 88, 39, 1);
+    background: linear-gradient(180deg, rgba(101, 88, 39, 1) 0%, rgba(85, 74, 31, 1) 1%, rgba(18, 18, 18, 1) 43%);
+  }
 }
 
 .album-img img {
