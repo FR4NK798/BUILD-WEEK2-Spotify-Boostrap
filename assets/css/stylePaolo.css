@@ -62,6 +62,16 @@ h6 {
   border: 1px solid white;
 }
 
+.btn-seguiti {
+  background-color: rgba(0, 0, 0, 0.082);
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-seguiti:hover {
+  background-color: black;
+}
+
 .songs-section {
   font-size: 0.8rem;
   background: rgb(45, 45, 45);
@@ -70,6 +80,14 @@ h6 {
 
 .bi-play-circle-fill {
   color: #1ed760;
+}
+
+.bi-shuffle {
+  color: #1ed760;
+}
+
+.play-sm {
+  color: #006401;
 }
 
 .bi-patch-check-fill {
