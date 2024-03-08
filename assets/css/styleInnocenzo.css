@@ -168,7 +168,7 @@ a {
 }
 
 .form-control {
-  padding: 6px 30px;
+  padding: 6px 40px;
   background-color: #3a3a3b;
 }
 
@@ -354,9 +354,9 @@ a {
 
 /* ----------------------------------------------- */
 @media screen and (max-width: 767px) {
-  .fotos {
+  /* .fotos {
     min-height: 15vh;
-  }
+  } */
 
   .fotos img {
     width: 80px;
@@ -384,11 +384,16 @@ a {
 
 @media screen and (max-height: 650px) {
   .fotos {
-    min-height: 28vh;
+    min-height: 20vh;
   }
 }
 @media screen and (min-height: 651px) {
   .fotos {
     min-height: 20vh;
+  }
+}
+@media screen and (min-height: 750px) {
+  .fotos {
+    min-height: 14vh;
   }
 }

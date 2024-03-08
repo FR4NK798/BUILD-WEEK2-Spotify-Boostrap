@@ -642,10 +642,10 @@ window.onload = () => {
     // inizio
 
     // dove chiamare funzione
-    sezCentrale.innerHTML = `            <header class="my-2 py-3 bg-back-black">
-    <div class="d-flex justify-content-between align-items-center">
+    sezCentrale.innerHTML = `            <header class="my-2 py-3 back-black">
+    <div class="d-flex  justify-content-center justify-content-lg-between align-items-center">
       <div class="d-flex align-items-center column-gap-2">
-        <button class="btn p-0 bg-black rounded-circle" style="width: 25px; height: 25px">
+        <button class="btn p-0 bg-black rounded-circle d-none d-lg-block" style="width: 25px; height: 25px">
           <svg xmlns="http://www.w3.org/2000/svg" height="20" width="12.5" viewBox="0 0 320 512" class="pb-1">
             <path
               fill="#c2c2c2"
@@ -653,7 +653,7 @@ window.onload = () => {
             />
           </svg>
         </button>
-        <button class="btn p-0 ps-1 bg-black rounded-circle" style="width: 25px; height: 25px">
+        <button class="btn p-0 ps-1 bg-black rounded-circle d-none d-lg-block" style="width: 25px; height: 25px">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="20"
@@ -668,7 +668,7 @@ window.onload = () => {
           </svg>
         </button>
         <div>
-          <div style="width: 18rem">
+          <div id="search-div">
           
             <form onsubmit="seachForm(event)">
               <input
@@ -678,8 +678,8 @@ window.onload = () => {
                 aria-label="Search" id="searchArtist"
               />
             </form>
-            <div class="d-flex search-cont">
-            <button type="submit" id="btnSearch">
+            <div class="d-none d-lg-flex  search-cont">
+            <button type="submit" id="btnSearch" class="bg-transparent border-0">
               <span>
 
                 <svg
@@ -700,7 +700,7 @@ window.onload = () => {
           </div>
         </div>
       </div>
-      <div class="dropdown-center d-flex">
+      <div class="dropdown-center d-none d-lg-flex">
         <button
           class="btn bg-black dropdown-toggle text-white ps-0 py-0 fs-8 rounded-5"
           type="button"
@@ -721,12 +721,12 @@ window.onload = () => {
 
   <div>
     <div>
-      <div class="container g-0">
+      <div class="container g-0 mt-2 mt-lg-0">
         <div class="row">
           <h3 class="fs-10">Sfoglia tutto</h3>
         </div>
-        <div class="row mt-2">
-          <div class="col-3">
+        <div class="row mt-2 row-gap-2 row-gap-lg-0">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos">
@@ -735,7 +735,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos2">
@@ -744,7 +744,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos3">
@@ -753,7 +753,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos4">
@@ -763,8 +763,8 @@ window.onload = () => {
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-3">
+        <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos5">
@@ -773,7 +773,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos6">
@@ -782,7 +782,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos7">
@@ -791,7 +791,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos8">
@@ -801,8 +801,8 @@ window.onload = () => {
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-3">
+        <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos9">
@@ -811,7 +811,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos10">
@@ -820,7 +820,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos11">
@@ -829,7 +829,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos12">
@@ -839,8 +839,8 @@ window.onload = () => {
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-3">
+        <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos13">
@@ -849,7 +849,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos14">
@@ -858,7 +858,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos15">
@@ -867,7 +867,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos16">
@@ -877,8 +877,8 @@ window.onload = () => {
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-3">
+        <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos17">
@@ -887,7 +887,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos18">
@@ -896,7 +896,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos19">
@@ -905,7 +905,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos20">
@@ -915,8 +915,8 @@ window.onload = () => {
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-3">
+        <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos21">
@@ -925,7 +925,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos22">
@@ -934,7 +934,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos23">
@@ -943,7 +943,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos24">
@@ -953,8 +953,8 @@ window.onload = () => {
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-3">
+        <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos25">
@@ -963,7 +963,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos26">
@@ -972,7 +972,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos27">
@@ -981,7 +981,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos28">
@@ -991,8 +991,8 @@ window.onload = () => {
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-3">
+        <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos29">
@@ -1001,7 +1001,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos30">
@@ -1010,7 +1010,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos31">
@@ -1019,7 +1019,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos32">
@@ -1029,8 +1029,8 @@ window.onload = () => {
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-3">
+        <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos33">
@@ -1039,7 +1039,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos34">
@@ -1048,7 +1048,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos35">
@@ -1057,7 +1057,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos36">
@@ -1067,8 +1067,8 @@ window.onload = () => {
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-3">
+        <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos37">
@@ -1077,7 +1077,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos38">
@@ -1086,7 +1086,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos39">
@@ -1095,7 +1095,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos40">
@@ -1105,8 +1105,8 @@ window.onload = () => {
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-3">
+        <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos41">
@@ -1115,7 +1115,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos42">
@@ -1124,7 +1124,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos43">
@@ -1133,7 +1133,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos44">
@@ -1143,8 +1143,8 @@ window.onload = () => {
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-3">
+        <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos45">
@@ -1153,7 +1153,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos46">
@@ -1162,7 +1162,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos47">
@@ -1171,7 +1171,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos48">
@@ -1181,8 +1181,8 @@ window.onload = () => {
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-3">
+        <div class="row mt-2 mt-md-4 row-gap-2 row-gap-lg-0">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos49">
@@ -1191,7 +1191,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos50">
@@ -1200,7 +1200,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos51">
@@ -1209,7 +1209,7 @@ window.onload = () => {
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div>
               <a href="">
                 <div class="fotos fotos52">
@@ -1227,10 +1227,10 @@ window.onload = () => {
     </div>
   </div>
 
-  <footer class="my-14">
+  <footer>
     <div class="row g-0">
-      <div class="d-flex gap-2">
-        <div class="col-2 p-0 fs-11">
+      <div class="d-flex gap-2 flex-column flex-md-row">
+        <div class="col-12 col-md-2 p-0 fs-11">
           <ul class="list-style-none p-0 text-card-p-gray">
             <li class="text-white fw-bold">
               <a href="" class="text-decoration-none text-card-p-gray">Azienda</a>
@@ -1240,7 +1240,7 @@ window.onload = () => {
             <li><a href="" class="text-decoration-none text-card-p-gray">For the Record</a></li>
           </ul>
         </div>
-        <div class="col-2 p-0 fs-11">
+        <div class="col-12 col-md-2 p-0 fs-11">
           <ul class="list-style-none p-0 text-card-p-gray">
             <li class="text-white fw-bold">
               <a href="" class="text-decoration-none text-card-p-gray">Community</a>
@@ -1252,7 +1252,7 @@ window.onload = () => {
             <li><a href="" class="text-decoration-none text-card-p-gray">Venditori</a></li>
           </ul>
         </div>
-        <div class="col-3 p-0 fs-11 pe-2">
+        <div class="col-12 col-md-3 p-0 fs-11 pe-2">
           <ul class="list-style-none p-0 text-card-p-gray">
             <li class="text-white fw-bold">
               <a href="" class="text-decoration-none text-card-p-gray">Link utili</a>
@@ -1263,7 +1263,7 @@ window.onload = () => {
           </ul>
         </div>
 
-        <div class="col-2 ms-auto">
+        <div class="col-12 col-md-2 ms-md-auto">
           <div class="d-flex gap-lg-1 justify-content-between">
             <div class="pt-0 px-2 pb-15 rounded-circle bg-icon-gray">
               <a href="">
@@ -1319,7 +1319,7 @@ window.onload = () => {
     </div>
     <hr class="mb-4" />
 
-    <div class="d-flex">
+    <div class="d-flex flex-column flex-md-row justify-content-between">
       <div class="d-flex column-gap-3 flex-wrap">
         <p class="mb-1 fs-12">
           <a href="" class="text-decoration-none text-card-p-gray"> Informazioni legali </a>
@@ -1341,7 +1341,7 @@ window.onload = () => {
 
         <p class="mb-1 fs-12"><a href="" class="text-decoration-none text-card-p-gray"> Accessibilità</a></p>
       </div>
-      <div class="d-flex" style="width: 10rem">
+      <div class="d-flex ms-auto ms-md-0">
         <p class="fs-11 text-card-p-gray">&copy;2024 Spotify AB</p>
       </div>
     </div>
