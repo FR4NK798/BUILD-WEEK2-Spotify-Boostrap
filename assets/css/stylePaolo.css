@@ -78,20 +78,40 @@ h6 {
   background: linear-gradient(180deg, rgba(45, 45, 45, 1) 0%, rgba(24, 24, 24, 1) 33%, rgba(11, 11, 11, 1) 100%);
 }
 
-.bi-play-circle-fill {
-  color: #1ed760;
-}
-
+.bi-play-circle-fill,
 .bi-shuffle {
   color: #1ed760;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.bi-play-circle-fill:hover {
+  color: #006401;
+}
+
+.bi-shuffle:hover {
+  color: #006401;
 }
 
 .play-sm {
   color: #006401;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.play-sm:hover {
+  color: #1ed760;
 }
 
 .bi-patch-check-fill {
   color: #3d91f4;
+}
+
+.bi-three-dots,
+.bi-heart,
+.bi-arrow-down-circle,
+.bi-three-dots-vertical {
+  cursor: pointer;
 }
 
 /* album */
