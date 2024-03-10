@@ -143,7 +143,7 @@ window.onload = () => {
           <div class="p-3 d-none d-md-block">
             <div class="d-flex justify-content-between">
               <div class="d-none d-md-block">
-                <button class="btn p-0 bg-black rounded-circle bg-opacity-75" style="width: 25px; height: 25px">
+                <a href="./index.html" class="btn p-0 bg-black rounded-circle bg-opacity-75" style="width: 25px; height: 25px">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="20"
@@ -154,9 +154,9 @@ window.onload = () => {
                     <path
                       fill="#c2c2c2"
                       d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-                    />
+                    /> 
                   </svg>
-                </button>
+                </a>
                 <button
                   class="btn p-0 ps-1 bg-black rounded-circle bg-opacity-50"
                   style="width: 25px; height: 25px"
@@ -396,7 +396,7 @@ window.onload = () => {
           <div class="p-3">
             <div class="d-flex justify-content-between">
               <div class="d-none d-md-block">
-                <button class="btn p-0 bg-black rounded-circle" style="width: 25px; height: 25px">
+                <a href="./index.html" class="btn p-0 bg-black rounded-circle bg-opacity-75" style="width: 25px; height: 25px">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="20"
@@ -407,9 +407,9 @@ window.onload = () => {
                     <path
                       fill="#c2c2c2"
                       d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-                    />
+                    /> 
                   </svg>
-                </button>
+                </a>
                 <button class="btn p-0 ps-1 bg-black rounded-circle" style="width: 25px; height: 25px">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
